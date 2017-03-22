@@ -1,0 +1,9 @@
+{
+  "name": "calc-style",
+  "version": "1.0.0",
+  "description": "Measure element size no matter it is been hidden or transform.",
+  "main": "index.js",
+  "repository": "git@github.com:smalleast/calc-style.git",
+  "author": "smalleast <382026180@qq.com>",
+  "license": "MIT"
+}
