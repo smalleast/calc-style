@@ -1,12 +1,7 @@
 var isReady = false;
 var forEach = Array.prototype.forEach;
 
-function setMeasureable(el) {
-  el.style.display = 'block';
-  el.style.visibility = 'hidden';
-  el.style.position = 'absolute';
-  el.style.zIndex = -10;
-}
+
 function getTransfromString(inElement) {
   var computedStyle = getComputedStyle(inElement);
   return computedStyle.transform || computedStyle.webkitTransform || computedStyle.mozTransform;
@@ -58,7 +53,6 @@ function imageReady(inElement, inCallback) {
 
 
 module.exports = function (inElement, inCallback) {
-  setMeasureable(inElement);
   if (!isReady) {
     listenImgsLoad(inElement, function () {
       isReady = true;
